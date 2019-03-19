@@ -32,10 +32,7 @@
 </head>
 
 <body>
-
   <div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading"><a href="index.html"><img src="logos/logo_simple_bw.png" width="175px"></a></div>
       <div class="list-group list-group-flush">
@@ -44,11 +41,7 @@
         <a href="overview.html" class="list-group-item list-group-item-action bg-light">Entregáveis</a>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
     <div id="page-content-wrapper">
-
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
@@ -56,83 +49,26 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-        <!-- <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul> -->
-        <!-- </div> -->
       </nav>
       <div class="container-fluid" style="padding-left:50px; padding-right:50px;padding-top: 40px">
         <h1>Entregáveis</h1>
         <hr>
       </div>
       <div class="container-fluid" style="padding-top:30px">
-        <div id="repo" class="container-fluid">
-
-        </div>
-        <div class="container-fluid">
-          <a href="https://github.com/DNTM2802/CloudDeliveries" target="_blank"><span style="font-size:17px"
-              class="badge badge-secondary" style="padding-left:10%"><i class="fab fa-github"></i> Repositório
-              GitHub</span></a>
-        </div>
-
-        <!-- </div>
-      <table class="table table-hover">
-        <thead>
-          <tr class="d-flex">
-            <th class="col-1" style="text-align:center">Tipo</th>
-            <th class="col-11">Nome</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="d-flex"><a></a>
-            <td class="col-1" style="text-align:center"><i class="fas fa-file-word"></td>
-            <td class="col-11"><a target="_blank"
-                href='https://uapt33090-my.sharepoint.com/:w:/g/personal/duarte_ntm_ua_pt/EQc-x1gwNelJpuFqb_3nTIkBMaIPm_xnQTdLehA87nlW-A?e=AhfnXK'>Workflows</a>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
-        <!-- /#page-content-wrapper -->
-
+        <iframe src="https://drive.google.com/embeddedfolderview?id=1lgJpzU9FcIjr0QFIQHWzj8WIuCSMbPfS#list"
+          style="width:100%; height:600px; border:0;"></iframe>
       </div>
-
-      <!-- /#wrapper -->
-
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script type="text/javascript" src="repo.js"></script>
-
-      <!-- Menu Toggle Script -->
-      <script>
-
-        $('#repo').repo({ user: 'DNTM2802', name: 'CloudDeliveries' });
-        $("#menu-toggle").click(function (e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-        });
-      </script>
-
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="repo.js"></script>
+    <script>
+      $('#repo').repo({ user: 'DNTM2802', name: 'CloudDeliveries' });
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
 </body>
-
 
 </html>
