@@ -226,7 +226,6 @@
                                     var fileContainer = $('<div class="file page" id="' + link.data('id') + '"></div>'),
                                         extension = response.data.name.split('.').pop().toLowerCase(),
                                         mimeType = getMimeTypeByExtension(extension);
-                                    console.log(extension, response.data.name);
                                     if ('image' === mimeType.split('/').shift()) {
                                         el = fileContainer.append($('<div class="image"><span class="border-wrap"><img src="" /></span></div>')).appendTo(repo);
                                         el.find('img')
@@ -235,6 +234,10 @@
                                     } else if (extension == "pdf" || extension == "docx" || extension == "doc" || extension == "pptx" || extension == "xlsx" || extension == "vpp") {
                                         var doc_open = "http://github.com/" + _this.settings.user + "/" + _this.settings.name + "/raw/master/" + response.data.name;
                                         window.open(doc_open, "_self");
+                                    } else if (extension == "gdoc" || extension == "gslides" || extension == "gsheets"){
+                                        var docs_str = decode64(response.data.content);
+                                        var obj = JSON.parse(docs_str);
+                                        window.open(obj.url, "_blank");
                                     } else {
                                         el = fileContainer.append($('<pre><code></code></pre>')).appendTo(repo);
                                         if (typeof _this.extensions[extension] != 'undefined')
