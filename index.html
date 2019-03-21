@@ -7,152 +7,366 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/png" href="images/cloud_favicon_16x16.png"/>
 
-  <title>CloudDeliveries | Apresentação</title>
+  <title>CloudDeliveries</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
   <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="css/new-age.min.css" rel="stylesheet">
+  <style>
+    header.masthead {
+      background: url("img/bg-pattern.png"), linear-gradient(to left, #f1903b, #a3531b)
+    }
 
+    .btn-outline:hover {
+      border-color: #1a9988;
+      background-color: #1a9988;
+    }
+
+    @font-face {
+      font-family: Ubuntu-Bold;
+      src: url(font/ubuntu-b.ttf);
+    }
+
+    @font-face {
+      font-family: Titillium;
+      src: url(font/titilliumweb-regular.ttf);
+    }
+
+    @font-face {
+      font-family: Ubuntu-Regular;
+      src: url(font/ubuntu-r.ttf);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: Ubuntu-Regular;
+      src: url(font/ubuntu-r.ttf);
+      font-weight: bold;
+    }
+  </style>
 </head>
-<style>
-  @font-face {
-    font-family: Ubuntu-Bold;
-    src: url(fonts/ubuntu-b.ttf);
-  }
 
-  @font-face {
-    font-family: Titillium;
-    src: url(fonts/titilliumweb-regular.ttf);
-  }
+<body id="page-top">
 
-  @font-face {
-    font-family: Ubuntu-Regular;
-    src: url(fonts/ubuntu-r.ttf);
-  }
-
-  h1,
-  h3,
-  h4 {
-    font-family: Ubuntu-Regular;
-    src: url(fonts/ubuntu-r.ttf);
-    font-weight: bold;
-  }
-</style>
-
-<body>
-
-  <div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading"><a href="index.html"><img src="logos/logo_simple_bw.png" width="175px"></a></div>
-      <div class="list-group list-group-flush">
-        <a href="index.html" class="list-group-item list-group-item-action bg-light">Apresentação</a>
-        <a href="equipa.html" class="list-group-item list-group-item-action bg-light">Equipa</a>
-        <a href="overview.html" class="list-group-item list-group-item-action bg-light">Entregáveis</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">
+        <h4>CloudDeliveries</h4>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="entregaveis.html">Entregáveis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#equipa">Equipa</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
+  </nav>
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-        <!-- <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">A CloudDeliveries é o serviço que lhe entrega qualquer coisa, a qualquer hora, em qualquer
+              lugar!</h1>
+            <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger">Descobre-nos!</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
               </div>
-            </li>
-          </ul> -->
-        <!-- </div> -->
-      </nav>
-      <div class="container-fluid text-center" style="padding-top:40px">
-        <h1 style="font-family:Ubuntu-Bold;">CloudDeliveries</h1>
-        <h5 style="font-family:Titillium;">AS FAST AS YOU ORDER IT</h5>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container-fluid" style="padding-left:50px; padding-right:50px;padding-top: 40px">
+    </div>
+  </header>
 
-        <img src="images/CD_1.png" style="width:100%">
+
+
+
+  <section class="features bg-light" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>Tudo o que precisa</h2>
         <hr>
-        <h4>Quem somos?</h4>
-        <p>A CloudDeliveries é uma empresa de tecnologia, cuja principal atividade é o desenvolvimento e gestão de uma
-          plataforma tecnológica que, através de uma aplicação móvel ou web (doravante, a APP) promove um serviço <i>on
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <img src="img/clock-circular-outline_green.png" style="width:25%;margin-bottom: 15px">
+                  <h3>Rápido</h3>
+                  <p class="text-muted">Receba o seu produto numa média de 20min</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <img src="img/euro_green.png" style="width:25%;margin-bottom: 15px">
+                  <h3>Barato</h3>
+                  <p class="text-muted">Não gaste combustível... asseguramos as menores taxas</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <img src="img/shield.png" style="width:25%;margin-bottom: 15px">
+                  <h3>Seguro</h3>
+                  <p class="text-muted">Pagamento 100% seguro através de PayPal, MBWay e Cartão de Crédito</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <img src="img/finger_snap.png" style="width:25%;margin-bottom: 15px">
+                  <h3>Fácil</h3>
+                  <p class="text-muted">Fácil, intuitivo, conveniente... o que pedir mais?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="cta">
+    <div class="cta-content">
+      <div class="container">
+        <h2>Stop waiting.<br>Start building.</h2>
+        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section> -->
+
+  <section class="text-center bg-light" id="who">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="h1-responsive font-weight-bold my-5">Quem somos?</h2>
+        <p class="mb-5" style="padding-left:10%; padding-right:10%">A CloudDeliveries é uma empresa de tecnologia, cuja
+          principal atividade é o desenvolvimento e gestão de uma
+          plataforma tecnológica que, através de uma aplicação móvel ou web,promove um serviço <i>on
             demand</i> que compra, levanta e entrega qualquer produto, a qualquer pessoa, em qualquer lugar.</p>
         <hr>
-        <h4>O sistema</h4>
-        <p>O sistema em desenvolvimento é uma plataforma através da qual diferentes lojas, com as quais a
-          CloudDeliveries pode manter um acordo comercial para o uso da plataforma, oferecem uma série de produtos e
-          serviços. O cliente tem a possibilidade de solicitar a aquisição dos produtos e serviços destas lojas
-          através da plataforma, atuando a CloudDeliveries meramente como intermediária e, portanto, não pode assumir,
-          e nem assume, qualquer tipo de responsabilidade sobre a qualidade dos produtos nem pela correta prestação
-          dos serviços oferecidos por parte das respetivas lojas.
-        </p>
+        <h2 class="h1-responsive font-weight-bold my-5">O sistema</h2>
+        <p class="mb-5" style="padding-left:10%; padding-right:10%">O sistema em desenvolvimento é uma plataforma
+          através da qual diferentes lojas, com as quais a CloudDeliveries pode manter um acordo comercial para o uso da
+          plataforma, oferecem uma série de produtos e serviços. O cliente tem a possibilidade de solicitar a aquisição
+          dos produtos e serviços destas lojas através da plataforma, atuando a CloudDeliveries meramente como
+          intermediária.</p>
         <hr>
-        <h4>Como funciona?</h4>
-        <p>A CloudDeliveries (APP) é uma plataforma intermediária <i>on demand</i> que atua como um serviço expresso
-          de entregas. A
-          mesma tem o intuito de facilitar que pessoas que precisam de ajuda com as suas tarefas ou compras nas lojas
-          associadas (doravante, clientes) possam realizar pedidos/encomendas nessas mesmas lojas remotamente, obtendo
-          os mesmos através de estafetas <i>freelancers</i>, dispostos a realizar voluntariamente as entregas que os
-          clientes
-          fazem na APP.</p>
+        <h2 class="h1-responsive font-weight-bold my-5">Como funciona?</h2>
+        <p class="mb-5" style="padding-left:10%; padding-right:10%">A CloudDeliveries (APP) é uma plataforma
+          intermediária on demand que atua como um serviço expresso de entregas. A mesma tem o intuito de facilitar que
+          pessoas que precisam de ajuda com as suas tarefas ou compras nas lojas associadas (doravante, clientes) possam
+          realizar pedidos/encomendas nessas mesmas lojas remotamente, obtendo os mesmos através de estafetas
+          freelancers, dispostos a realizar voluntariamente as entregas que os clientes fazem na APP.</p>
 
-        <p>Os estafetas são, portanto, uma rede de <i>freelancers</i> profissionais independentes que colaboram
-          com a APP. Quando estes estão interessados em realizar uma prestação de serviços de estafeta, conectam-se à
-          plataforma da CloudDeliveries e, num determinado período de tempo, comprometem-se a realizar o serviço de
-          compra/distribuição/entrega que o cliente lhes confere através da APP.
-        </p>
-
-        <div id="repo" class="container-fluid">
-
-        </div>
-
+        <p class="mb-5" style="padding-left:10%; padding-right:10%">Os estafetas são, portanto, uma rede de freelancers
+          profissionais independentes que colaboram com a APP.
+          Quando estes estão interessados em realizar uma prestação de serviços de estafeta, conectam-se à plataforma da
+          CloudDeliveries e, num determinado período de tempo, comprometem-se a realizar o serviço de
+          compra/distribuição/entrega que o cliente lhes confere através da APP.</p>
       </div>
-    </div>
-    <!-- /#page-content-wrapper -->
 
-  </div>
-  <!-- /#wrapper -->
+
+
+    </div>
+    <img src="img/CD_1.png" style="width:80%">
+  </section>
+  <section class="team-section text-center bg-primary" id="equipa">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Equipa</h2>
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="img/daniel.jpg" class="rounded-circle z-depth-1" alt="Daniel Gomes">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Daniel Gomes</h5>
+        <p class="grey-text">93015</p>
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic">
+            <i class="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <!-- Github -->
+          <a class="p-2 fa-lg ins-ic">
+            <i class="fab fa-github blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="img/diogo.jpg" class="rounded-circle z-depth-1" alt="Diogo Carvalho">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Diogo Carvalho</h5>
+        <p class="grey-text">92969</p>
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic">
+            <i class="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <!-- Github -->
+          <a class="p-2 fa-lg ins-ic">
+            <i class="fab fa-github blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="img/empty_person.jpg" class="rounded-circle z-depth-1" alt="Duarte Mortágua">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Duarte Mortágua</h5>
+        <p class="grey-text">92963</p>
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic">
+            <i class="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <!-- Github -->
+          <a class="p-2 fa-lg ins-ic">
+            <i class="fab fa-github blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6">
+        <div class="avatar mx-auto">
+          <img src="img/empty_person.jpg" class="rounded-circle z-depth-1" alt="João Laranjo">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">João Laranjo</h5>
+        <p class="grey-text">91153</p>
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic">
+            <i class="fab fa-facebook-f blue-text"> </i>
+          </a>
+          <!-- Github -->
+          <a class="p-2 fa-lg ins-ic">
+            <i class="fab fa-github blue-text"> </i>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!-- Section: Team v.1 -->
+  <!-- <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>We
+        <i class="fas fa-heart"></i>
+        new friends!</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-google-plus">
+          <a href="#">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="container">
+      <p>&copy; CloudDeliveries 2019. All Rights Reserved.</p>
+      <!-- <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul> -->
+    </div>
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function (e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
 
 </body>
 
